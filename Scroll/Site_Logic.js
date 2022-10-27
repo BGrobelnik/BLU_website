@@ -1,5 +1,4 @@
 // MAIN PAGE JS 
-
 //------------------UPDATES THE DATE ON WEBSITE------------------
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
@@ -70,7 +69,7 @@ scrollLinks.forEach(function(link){
     linksContainer.style.height = 0;
     });
 });
-
+//-----------------------------------------------------------------------------------------------------
 //COUNTER
 //set initial count
 let count = 0;
@@ -105,21 +104,41 @@ btns.forEach(function (btn) {
     });
 });
 
+// //COLOR FLIPPER
+// const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+// const btn = document.getElementById("btn");
+// const color = document.querySelector(".color");
 
-//COLOR FLIPPER
+// btn.addEventListener("click", function(){
+//     let hexColor = "#";
+//     for(let i = 0;i<6;i++){
+//         hexColor += hex[getRandomNumber()];
+//     }
+//     color.textContent = hexColor;
+//     document.body.style.backgroundColor = hexColor;
+// })
+// function getRandomNumber(){
+//     return Math.floor(Math.random() * hex.length)
+// }
 
-const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-const btn = document.getElementById("btn");
-const color = document.querySelector(".color");
+//----------------------------DEVELOPERS TAB SHOW-------------------
+const buttons = document.querySelectorAll(".tab-btn");
+const about = document.querySelector(".about");
+const articles = document.querySelectorAll (".content");
 
-btn.addEventListener("click", function(){
-    let hexColor = "#";
-    for(let i = 0;i<6;i++){
-        hexColor += hex[getRandomNumber()];
+about.addEventListener("click", function(e){
+    const id = e.target.dataset.id;
+    if(id){
+        //remove active status from other buttons
+        buttons.forEach(function(btn){
+            btn.classList.remove("active");
+            e.target.classList.add("active");
+        });
+        //hide other articles/photos
+        articles.forEach(function(article){
+            article.classList.remove("active");
+        });
+        const elements = document.getElementById(id);
+        elements.classList.add("active");
     }
-    color.textContent = hexColor;
-    document.body.style.backgroundColor = hexColor;
-})
-function getRandomNumber(){
-    return Math.floor(Math.random() * hex.length)
-}
+});
