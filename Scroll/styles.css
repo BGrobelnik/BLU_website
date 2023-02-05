@@ -333,10 +333,16 @@ header {
   }
 }
 /* sections and title */
-.title h2 {
+.title h2{
   text-align: center;
   text-transform: uppercase;
 }
+
+.services-headers{
+  text-align: left;
+  margin: 30px;
+}
+
 .title span {
   color: var(--clr-secondary);
 }
@@ -536,3 +542,16 @@ footer p {
   display: block;
 }
 
+/*3D PRINTING*/
+.printing-p{
+  font-size: 20px;
+}
+
+.printing-section-right{
+  float: right;
+  margin: 30px;
+  
+}
+.printing-section-left{
+  margin: 30px;
+}
