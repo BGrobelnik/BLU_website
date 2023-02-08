@@ -1,161 +1,178 @@
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>JS-projects</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-    </head>
 
-    <body>
-        <header id="home">
-            <nav id="nav">
-                <div class="nav-center">
-                    <div class="nav-header">
-                        <img src="./media/BLU_LOGO_1.png" alt="logo" class="logo"/>
-                        <button class="nav-toggle">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                    </div>
-                    <div class="links-container">
-                        <ul class="links">
-                            <li>
-                            <a href="#home" class="scroll-link">home</a>
-                            </li>
-                            <li>
-                            <a href="#about" class="scroll-link">Developers</a>
-                            </li>
-                            <li>
-                            <a href="#services" class="scroll-link">Services</a>
-                            </li>
-                            <li>
-                            <a href="#tours" class="scroll-link">Projects</a>
-                            </li>
-                        </ul>
-                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+</head>
+
+<body>
+    <header id="home">
+        <nav id="nav">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./media/BLU_LOGO_1.png" alt="logo" class="logo" />
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
-            </nav>
-            <div id="particles-js">
-                <div class="banner">
-                    <div class="container">
-                        <h1>"We will answer the question that wasn't asked."</h1>
-                        <a href="#tours" class="scroll-link btn btn-white">
-                            Explore Projects
-                        </a>
-                    </div>
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">Developers</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="scroll-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#tours" class="scroll-link">Projects</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </header>
-        <!-- DEVELOPERS -->
-        <section id="about" class="section">
-            <div class="title">
-                <h2>Developers</h2>
-                <div class="about-center section-center">
-                    <!-- images -->
-                    <article class="about-img">
+        </nav>
+        <div id="particles-js">
+            <div class="banner">
+                <div class="container">
+                    <h1>"We will answer the question that wasn't asked."</h1>
+                    <a href="#tours" class="scroll-link btn btn-white">
+                        Explore Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- DEVELOPERS -->
+    <section id="about" class="section">
+        <div class="title">
+            <h2>Developers</h2>
+            <div class="about-center section-center">
+                <!-- images -->
+                <article class="about-img">
+                    <div class="content active" id="Developer1">
+                        <img src="./media/blank_profile_pic.webp" alt="about picture" />
+                    </div>
+                    <div class="content" id="Developer2">
+                        <img src="./media/BLU_LOGO.png" alt="about picture" />
+                    </div>
+                    <div class="content" id="Developer3">
+                        <img src="" alt="about picture" />
+                    </div>
+                </article>
+                <article class="about">
+                    <!-- btn container -->
+                    <div class="btn-container">
+                        <button class="tab-btn active" data-id="Developer1">ime1</button>
+                        <button class="tab-btn" data-id="Developer2">ime2</button>
+                        <button class="tab-btn" data-id="Developer3">ime3</button>
+                    </div>
+                    <article class="about-content">
+                        <!-- information about developers -->
                         <div class="content active" id="Developer1">
-                            <img src="./media/blank_profile_pic.webp" alt="about picture"/>
+                            <h4>Blaž Grobelnik</h4>
+                            <p>
+                                I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice
+                                pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean
+                                shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small
+                                batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
+                                direct trade hoodie ugh chambray, craft beer pork belly flannel tacos
+                                single-origin coffee art party migas plaid pop-up.
+                            </p>
                         </div>
                         <div class="content" id="Developer2">
-                            <img src="./media/BLU_LOGO.png" alt="about picture"/>
+                            <h4>Urška Pitino</h4>
+                            <p>
+                                Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal
+                                deep v hella biodiesel. Church-key listicle polaroid put a bird on it
+                                chillwave palo santo enamel pin, tattooed meggings franzen la croix cray.
+                                Retro yr aesthetic four loko tbh helvetica air plant, neutra palo santo tofu
+                                mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof
+                                party hammock master cleanse pop-up truffaut, bicycle rights skateboard
+                                affogato readymade sustainable deep v live-edge schlitz narwhal.
+                            </p>
                         </div>
                         <div class="content" id="Developer3">
-                            <img src="" alt="about picture"/>
+                            <h4>Luka Grobelnik</h4>
+                            <p>
+                                Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four
+                                dollar toast raclette shoreditch church-key. Poutine etsy tote bag, cred
+                                fingerstache leggings cornhole everyday carry blog gastropub. Brunch biodiesel
+                                sartorial mlkshk swag, mixtape hashtag marfa readymade direct trade man braid
+                                cold-pressed roof party. Small batch adaptogen coloring book heirloom.
+                                Letterpress food truck hammock literally hell of wolf beard adaptogen everyday
+                                carry. Dreamcatcher pitchfork yuccie, banh mi salvia venmo photo booth quinoa
+                                chicharrones.
+                            </p>
                         </div>
                     </article>
-                    <article class="about">
-                        <!-- btn container -->
-                        <div class="btn-container">
-                            <button class="tab-btn active" data-id="Developer1">ime1</button>
-                            <button class="tab-btn" data-id="Developer2">ime2</button>
-                            <button class="tab-btn" data-id="Developer3">ime3</button>
-                        </div>
-                        <article class="about-content">
-                            <!-- information about developers -->
-                            <div class="content active" id="Developer1">
-                                <h4>Blaž Grobelnik</h4>
-                                <p>
-                                    I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice
-                                    pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean
-                                    shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small
-                                    batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
-                                    direct trade hoodie ugh chambray, craft beer pork belly flannel tacos
-                                    single-origin coffee art party migas plaid pop-up.
-                                  </p>
-                            </div>
-                            <div class="content" id="Developer2">
-                                <h4>Urška Pitino</h4>
-                                <p>
-                                    Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal
-                                    deep v hella biodiesel. Church-key listicle polaroid put a bird on it
-                                    chillwave palo santo enamel pin, tattooed meggings franzen la croix cray.
-                                    Retro yr aesthetic four loko tbh helvetica air plant, neutra palo santo tofu
-                                    mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof
-                                    party hammock master cleanse pop-up truffaut, bicycle rights skateboard
-                                    affogato readymade sustainable deep v live-edge schlitz narwhal.
-                                  </p>
-                            </div>
-                            <div class="content" id="Developer3">
-                                <h4>Luka Grobelnik</h4>
-                                <p>
-                                    Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four
-                                    dollar toast raclette shoreditch church-key. Poutine etsy tote bag, cred
-                                    fingerstache leggings cornhole everyday carry blog gastropub. Brunch biodiesel
-                                    sartorial mlkshk swag, mixtape hashtag marfa readymade direct trade man braid
-                                    cold-pressed roof party. Small batch adaptogen coloring book heirloom.
-                                    Letterpress food truck hammock literally hell of wolf beard adaptogen everyday
-                                    carry. Dreamcatcher pitchfork yuccie, banh mi salvia venmo photo booth quinoa
-                                    chicharrones.
-                                  </p>
-                            </div>
-                        </article>
-                    </article>
+                </article>
+            </div>
+        </div>
+    </section> spremenjeno v article
+
+
+
+    <!-- services -->
+    <article id="services" class="section">
+        <div class="title">
+            <h2>3D-Printing</h2>
+        </div>
+        <div clas="d-printing-row">
+            <div class="d-printing-column">
+                <div class="image-container">
+                    <img src="./media/3d-printing.jpg" alt="3d-printing">
+                    <div class="text-block-3d-printing">
+                        <h3 class="services-headers">ON DEMAND 3D PRINTED PARTS</h3>
+                        <h4>Rapid prototyping & 3D printing services</h4>
+                        <p class="printing-p"> - Manufacturing Aids, Jigs, and Fixtures <br>
+                            - End-use or Replacement Parts <br>
+                            - Prototypes for Form, Fit, Feel, Function<br>
+                            - Volume Production of Parts for Manufacturing<br>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </section> spremenjeno v article
-
-
-        
-        <!-- services -->
-        <article id="services" class="section">
-            <div class="title">
-                <h2>Services</h2>
+            <div class="d-printing-column">
+                <div class="image-container">
+                    <img src="./media/3d-printing-1.jpg" alt="3d-printing-1">
+                </div>
             </div>
-            <section class="printing-section-left">
-                <h2 class ="services-headers">3D-printing</h2>
-                <h3>ON DEMAND 3D PRINTED PARTS</h3>
-                <h4>Rapid prototyping & 3D printing services</h4>
-                <p class="printing-p"> - Manufacturing Aids, Jigs, and Fixtures <br>
-                    - End-use or Replacement Parts <br>
-                    - Prototypes for Form, Fit, Feel, Function<br>
-                    - Hyperrealistic Multi-Material Prototypes<br>
-                    - End-of-Arm Robotic Tools<br>
-                    - Volume Production of Parts for Manufacturing<br></p>
-            </section>
-            <section class="printing-section-right">
-                <button type="button"> Print!</button>
-            </section>
-        </article>
+        </div>
+        <div class="printing-text">
+            Upload your 3D part file to our instant quoting tool below to get immediate pricing. <br>
+            Simply select your desired material and print setting and add to your cart for a price. <br>
+            If you need any help along the process use the “ask for help” button to get in contact with on of our Application Engineers.
+        </div>
+        <div class="button-container">
+            <a class="button-print" type="button" href="Upload_model.html"> CLICK HERE TO UPLOAD YOUR FILE</a>
+        </div>
+    </article>
 
 
 
-        <!-- Projects -->
-        <section id="tours" class="section">
-            <div class="title">
-                <h2>Projects</h2>
-            </div>
-        </section>
-        <footer class="section">
-            <p>Copyright &copy; BLU Development. <span id="date">2022</span>
+    <!-- Projects -->
+    <section id="tours" class="section">
+        <div class="title">
+            <h2>Projects</h2>
+        </div>
+    </section>
+    <footer class="section">
+        <p>Copyright &copy; BLU Development. <span id="date">2022</span>
             all rights reserved</p>
-        </footer>
-        <!-- back to top button -->
-        <a href="#home" class="scroll-link top-link">
-            <i class="fas fa-arrow-up"></i>
-        </a>
-        <script src="Site_Logic.js"></script>
-        <script src="./Particles_feature/particles.js-master/particles.min.js"></script>
-        <script src="./Particles_feature/particles.js-master/demo/js/app.js"></script>
-    </body>
+    </footer>
+    <!-- back to top button -->
+    <a href="#home" class="scroll-link top-link">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="Site_Logic.js"></script>
+    <script src="./Particles_feature/particles.js-master/particles.min.js"></script>
+    <script src="./Particles_feature/particles.js-master/demo/js/app.js"></script>
+</body>
+
 </html>

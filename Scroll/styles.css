@@ -545,13 +545,141 @@ footer p {
 /*3D PRINTING*/
 .printing-p{
   font-size: 20px;
+  margin: 10px;
+  color: white;
 }
 
-.printing-section-right{
-  float: right;
-  margin: 30px;
-  
+.image-container{
+  position: relative;
+  text-align: left;
+  color: white;
+  height: auto;
 }
-.printing-section-left{
+
+.text-block-3d-printing{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: hsl(209, 61%, 16%, 0.7);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+}
+
+.d-printing-row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.d-printing-column{
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.button-container{
+  text-align: center;
+  margin-top: 20px;
+}
+.button-print{
   margin: 30px;
+  position: relative;
+  width: 100%;
+  background: hsl(209, 61%, 16%, 0.7);
+  color: white;
+  text-transform: uppercase;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.button-container .button-print{
+  margin: 30px;
+  position: relative;
+  width: 100%;
+  background: hsl(209, 61%, 16%, 0.7);
+  color: white;
+  text-transform: uppercase;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.button-container .button-print:hover{
+  background: var(--clr-grey-1);
+}
+
+.printing-text{
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/*STL UPLOADER*/
+
+.upload-text{
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+  font-size: 20px;
+  margin-top: 30px;
+}
+.upload-container{
+  text-align: center;
+  position: relative;
+  color: white;
+  bottom: 20px;
+  left: 20px;
+  background: hsl(209, 61%, 16%, 0.7);
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+}
+
+.upload-container input {
+  border: 1px solid #92b0b3;
+  background: #f1f1f1;
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  padding: 100px 0px 100px 250px;
+  text-align: center !important;
+  width: 1000px;
+  height: 800px;
+  color: black;
+}
+
+.upload-container input:hover {
+  background: #ddd;
+}
+
+.upload-container:before {
+  position: absolute;
+  bottom: 50px;
+  left: 245px;
+  content: " (or) Drag and Drop files here. ";
+  color: #3f8188;
+  font-weight: 900;
+}
+
+.upload-button {
+  margin-left: 300px;
+  padding: 7px 20px;
 }
